@@ -1,0 +1,13 @@
+/* Add this to your CSS file */
+@media (min-width: 1024px) {
+    .large-screen-only {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .large-screen-only {
+      display: none;
+    }
+  }
+  

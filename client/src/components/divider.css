@@ -1,0 +1,19 @@
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.left-line,
+.right-line {
+  flex: 1;
+  height: 1px;
+  background-color: brown;
+}
+
+.italian-cursive {
+  font-family: 'Cursive';
+  color: brown;
+  padding: 0 10px;
+}

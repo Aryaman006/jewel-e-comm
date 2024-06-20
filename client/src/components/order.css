@@ -1,0 +1,89 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Shadowy effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px); /* Blur effect */
+  z-index: 2000;
+}
+
+
+
+.modal-card.invoice {
+  background: #fff;
+  padding: 20px;
+  color: #333;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.invoice-header {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.invoice-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.invoice-header p {
+  margin: 5px 0;
+}
+
+.invoice-info, .invoice-products, .invoice-summary, .invoice-notes {
+  margin-bottom: 20px;
+}
+
+.invoice-section h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.invoice-section p {
+  margin: 5px 0;
+}
+
+.invoice-products table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.invoice-products th, .invoice-products td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.invoice-summary-item p {
+  margin: 5px 0;
+  font-size: 1.1rem;
+}
+
+.invoice-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.invoice-actions .btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.close-modal-btn {
+  background: #ccc;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}

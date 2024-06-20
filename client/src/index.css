@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+
+body {
+    background-color: #ebe3e5;
+}
+/* index.css */
+header{
+    position: fixed;
+    z-index: 1;
+}
+main{
+    min-height: calc(100vh - 90px - 250px)
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+}
+@media only screen and (max-width: 500px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+}

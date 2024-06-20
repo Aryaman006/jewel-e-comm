@@ -1,0 +1,50 @@
+.animation-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ring-container {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    animation: ring-fall 2s ease forwards;
+}
+
+.ring {
+    width: 100px;
+}
+
+@keyframes ring-fall {
+    0% {
+        top: -100px; /* Start position above the viewport */
+        opacity: 1;
+    }
+    90% {
+        top: 50%; /* End position at the center of the viewport */
+        opacity: 1;
+    }
+    100% {
+        top: 50%; /* Ensure it stays at the center */
+        opacity: 0; /* Fade out */
+    }
+}
+
+.start-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.start-button:hover {
+    background-color: #0056b3;
+}

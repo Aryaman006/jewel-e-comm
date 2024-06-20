@@ -1,0 +1,58 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    /* background-color: #eecad5; */
+  }
+  
+  @media only screen and (min-width: 1200px) {
+  .admin-dashboard {
+    display: flex;
+    height: 100%;
+    background-color: #f0ebed;
+  }
+  .sidebar {
+    width: 250px; /* Fixed width for the sidebar */
+    padding: 1rem;
+    display: flex;
+    margin-top: 80px;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--bg-base-200, #333);
+  }
+  
+  .sidebar-large {
+    flex: 0 0 250px; /* Fixed width for the sidebar */
+    padding: 1rem;
+    background-color: var(--bg-base-200, #333);
+  }
+  
+  .sidebar button {
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  
+  .main-content {
+    flex-grow: 1; /* Ensures main content takes up remaining space */
+    padding: 1rem;
+    background-color: #f5edef;
+  }
+  
+  .main-content-large {
+    flex-grow: 1; /* Ensures main content takes up remaining space */
+    padding: 1rem;
+    background-color: #f3ecee;
+  }
+}
+  .table-container{
+    overflow-x: auto;
+  }
+
+  .order-row {
+    border-bottom: 1px solid #e5e5e5; /* Add a bottom border to each row */
+  }
+  

@@ -1,0 +1,223 @@
+/* General styles for the cart page */
+.cart-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 100px;
+  min-height: 100vh;
+}
+
+/* Layout for cart content and order summary */
+.cart-content, .summary-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.summary-card {
+  max-width: 400px;
+  width: 100%;
+}
+
+.cart-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  /* min-width: 40vw; */
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+}
+
+.detail-container {
+  display: flex;
+  align-items: center;
+}
+
+.product-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.product-price {
+  color: #007bff;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-control button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.btn {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-error {
+  background-color: #dc3545;
+}
+
+.btn-info {
+  background-color: #17a2b8;
+}
+
+.btn-ghost {
+  background-color: transparent;
+}
+
+.summary-card h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.user-info p {
+  margin: 0.5rem 0;
+}
+
+.total-amount {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.payment-method {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.place-order-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.place-order-btn:hover {
+  background-color: #218838;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  .cart-page {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .cart-content {
+    max-width: 600px;
+    margin-right: 1rem;
+  }
+
+  .summary-card {
+    max-width: 400px;
+    margin: 0;
+}
+}
+
+@media (max-width: 450px) {
+  .cart-card{
+    display: flex;
+    flex-direction: column;
+  }
+  .button-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+}
+
+.modal-title {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background-color: #f0f0f0;
+  color: #333;
+  margin-right: 0.5rem;
+}
+
+.confirm-button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}

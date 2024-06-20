@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10vw;
+  }
+  
+  /* Add this to your CSS file */
+
+/*  */
+  
+  .product-box {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    margin-top: 5rem;
+    padding: 2rem;
+    background-color: #fff;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 80%;
+    width: 100%;
+  }
+  
+  .fig{
+    margin: 0;
+    width: 50%;
+  }
+  .product-box figure {
+    margin: 0;
+    /* width: 50%; */
+  }
+  
+  .img {
+    width: 100%;
+    max-height: 20rem;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .detail-box {
+    margin-top: 1rem;
+    text-align: center;
+    width: 50%;
+  }
+  
+  .detail-box h1 {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .detail-box h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .price-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    font-family: 'Railway', sans-serif;
+  }
+  .card-detail{
+    color: black;
+  }
+  
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .similar-products {
+    margin-top: 2rem;
+    width: 100%;
+  }
+  
+  .similar-products h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-top: 3rem;
+    align-items: center;
+    margin-bottom: 4rem;
+    color: brown;
+    font-size: 2.5rem;
+  }
+  
+  .similar-products-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .related-product {
+    width: calc(33.333% - 1rem);
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .related-product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .related-product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .related-product h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  
+  .related-product .price-box {
+    margin-top: 0.5rem;
+  }
+  
+  .img-container {
+    background-color: aliceblue;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Responsive styling */
+  @media only screen and (max-width: 768px) {
+ 
+    .product-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 7rem;
+        padding: 2rem;
+        background-color: #fff;
+        color: black;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        max-width: 800px;
+        width: 100%;
+      }
+
+      .img {
+        width: 100%;
+        max-height: 20rem;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+
+      .fig {
+        margin: 0;
+        width: 100%;
+      }
+      
+  
+    .detail-box {
+      text-align: center;
+    }
+  
+    .similar-products-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .related-product {
+      width: 100%;
+    }
+  }
+  
