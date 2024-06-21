@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 const corsOptions = {
-  origin: "https://client-8vg105iy1-aryaman006s-projects.vercel.app",
+  origin: "https://client-pi-ten.vercel.app/",
   methods: "GET,POST,PUT,DELETE,PATCH,HEAD",
   credentials: true,
 };
