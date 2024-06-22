@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 const corsOptions = {
-  origin: "https://client-pi-ten.vercel.app",
+  origin: "https://leafy-gnome-ff91f9.netlify.app/",
   methods: "GET,POST,PUT,DELETE,PATCH,HEAD",
   credentials: true,
 };
