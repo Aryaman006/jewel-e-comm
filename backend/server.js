@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 const corsOptions = {
-  origin: "https://horcrux-ten.vercel.app/",
+  origin: "https://horcrux-ten.vercel.app",
   methods: "GET,POST,PUT,DELETE,PATCH,HEAD",
   credentials: true,
 };
