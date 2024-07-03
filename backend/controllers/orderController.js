@@ -30,7 +30,8 @@ const getOrderController = async (req, res) => {
                                    .select("-photo")
                                    .select("-password")
                                    .populate('products.productId')
-                                   .populate('users');
+                                   .populate('users')
+                                    .lean();
 
         res.status(200).json({
             success: true,
